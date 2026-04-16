@@ -13,52 +13,52 @@
    Fonts: Familjen Grotesk (display) · Plus Jakarta Sans (body) · DM Mono (data)
 ═══════════════════════════════════════════════════════════ */
 :root{
-  --bg:         #F0F4F8;
-  --bg2:        #E4EBF2;
-  --bg3:        #F8FAFC;
-  --card:       #FFFFFF;
-  --cardHi:     #F5F9FF;
-  --blue:       #0057B8;
-  --blueLt:     #1A6FCC;
-  --blueBg:     rgba(0,87,184,.07);
-  --teal:       #007A6E;
-  --tealBg:     rgba(0,122,110,.07);
-  --amber:      #B45309;
-  --amberBg:    rgba(180,83,9,.07);
-  --red:        #B91C1C;
-  --redBg:      rgba(185,28,28,.07);
-  --green:      #166534;
-  --greenBg:    rgba(22,101,52,.07);
-  --violet:     #5B21B6;
-  --violetBg:   rgba(91,33,182,.07);
+  --bg:         #070E14;
+  --bg2:        #0C1620;
+  --bg3:        #0A1420;
+  --card:       #0F1D2C;
+  --cardHi:     #162537;
+  --blue:       #3B9EFF;
+  --blueLt:     #5BB3FF;
+  --blueBg:     rgba(59,158,255,.1);
+  --teal:       #00C8B8;
+  --tealBg:     rgba(0,200,184,.1);
+  --amber:      #F59E0B;
+  --amberBg:    rgba(245,158,11,.1);
+  --red:        #F87171;
+  --redBg:      rgba(248,113,113,.1);
+  --green:      #34D399;
+  --greenBg:    rgba(52,211,153,.1);
+  --violet:     #A78BFA;
+  --violetBg:   rgba(167,139,250,.1);
   --amul-red:   #E01B24;
   --amul-gold:  #F59E0B;
   --white:      #FFFFFF;
-  --t1:         #0F1F2E;
-  --t2:         #4A6175;
-  --t3:         #8DA4B5;
-  --border:     rgba(0,87,184,.11);
-  --borderHi:   rgba(0,87,184,.24);
-  --shadow-sm:  0 1px 4px rgba(0,0,0,.08);
-  --shadow:     0 4px 18px rgba(0,0,0,.1);
-  --shadow-lg:  0 12px 40px rgba(0,0,0,.14);
+  --t1:         #E2EDF5;
+  --t2:         #7FA8C0;
+  --t3:         #3D6070;
+  --border:     rgba(59,158,255,.12);
+  --borderHi:   rgba(59,158,255,.28);
+  --shadow-sm:  0 1px 6px rgba(0,0,0,.4);
+  --shadow:     0 4px 20px rgba(0,0,0,.5);
+  --shadow-lg:  0 12px 40px rgba(0,0,0,.6);
   --nav-h:      62px;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{font-size:16px;scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--t1);overflow-x:hidden;line-height:1.55}
-::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:#AABFCC;border-radius:2px}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:var(--bg2)}::-webkit-scrollbar-thumb{background:#1E3D52;border-radius:2px}
 
 /* ── NAV ─────────────────────────────────────────────────── */
 nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
-  background:rgba(255,255,255,.97);backdrop-filter:blur(20px);
+  background:rgba(7,14,20,.96);backdrop-filter:blur(20px);
   border-bottom:1px solid var(--border);box-shadow:var(--shadow-sm)}
 .nav-w{max-width:1400px;margin:0 auto;height:var(--nav-h);display:flex;align-items:center;padding:0 24px;gap:0}
 .nav-brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
 .brand-mark{width:34px;height:34px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .brand-mark svg{width:18px;height:18px}
 .brand-text{display:flex;flex-direction:column}
-.brand-name{font-family:'Familjen Grotesk',sans-serif;font-size:17px;font-weight:700;color:var(--t1);letter-spacing:.2px;line-height:1}
+.brand-name{font-family:'Familjen Grotesk',sans-serif;font-size:17px;font-weight:700;color:var(--white);letter-spacing:.2px;line-height:1}
 .brand-client{font-size:10px;color:var(--t3);font-family:'DM Mono',monospace;letter-spacing:.3px;margin-top:1px}
 .nav-divider{width:1px;height:28px;background:var(--border);margin:0 20px;flex-shrink:0}
 .nav-tabs{display:flex;gap:3px;overflow-x:auto;scrollbar-width:none}
@@ -110,12 +110,12 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 .chip-warn{background:var(--amberBg);color:var(--amber)}
 .chip-off{background:var(--bg2);color:var(--t3)}
 .pc-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;padding:0 14px 14px}
-.pcm{background:var(--bg);border-radius:8px;padding:8px 10px}
+.pcm{background:var(--bg2);border-radius:8px;padding:8px 10px}
 .pcm-val{font-family:'DM Mono',monospace;font-size:14px;font-weight:500;color:var(--t1)}
 .pcm-lbl{font-size:10px;color:var(--t3);margin-top:2px}
 .pc-bar-row{padding:0 14px 14px;display:flex;gap:6px;align-items:center}
 .pc-eff-lbl{font-size:11px;color:var(--t2);flex-shrink:0;width:66px}
-.pc-eff-track{flex:1;height:5px;background:var(--bg2);border-radius:3px;overflow:hidden}
+.pc-eff-track{flex:1;height:5px;background:rgba(255,255,255,.08);border-radius:3px;overflow:hidden}
 .pc-eff-fill{height:100%;border-radius:3px;transition:width .8s ease}
 .pc-eff-val{font-family:'DM Mono',monospace;font-size:11px;font-weight:500;flex-shrink:0;width:36px;text-align:right}
 
@@ -162,13 +162,13 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 .cc-phase{font-size:10px;font-family:'DM Mono',monospace;color:var(--t3);margin-bottom:8px}
 .cc-val{font-family:'Familjen Grotesk',sans-serif;font-size:22px;font-weight:700;line-height:1}
 .cc-unit{font-size:10px;color:var(--t3)}
-.cc-prog{height:4px;background:var(--bg2);border-radius:2px;margin-top:8px;overflow:hidden}
+.cc-prog{height:4px;background:rgba(255,255,255,.08);border-radius:2px;margin-top:8px;overflow:hidden}
 .cc-fill{height:100%;border-radius:2px;transition:width .8s}
 .conductivity-graph{height:120px;position:relative}
 
 /* ── PASTEURISATION ─────────────────────────────────── */
 .past-display{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
-.past-box{background:var(--bg);border-radius:10px;padding:14px}
+.past-box{background:var(--bg2);border-radius:10px;padding:14px}
 .past-label{font-size:11px;color:var(--t3);margin-bottom:6px;font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.4px}
 .past-val{font-family:'Familjen Grotesk',sans-serif;font-size:32px;font-weight:700;color:var(--t1);line-height:1}
 .past-unit{font-size:13px;color:var(--t3)}
@@ -177,14 +177,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 
 /* Quality table */
 .q-table{width:100%;border-collapse:collapse;font-size:13px}
-.q-table th{background:var(--bg);color:var(--t3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border)}
+.q-table th{background:var(--bg2);color:var(--t3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border)}
 .q-table td{padding:9px 12px;border-bottom:1px solid rgba(0,87,184,.05);color:var(--t1);font-size:12px}
 .q-table tr:last-child td{border-bottom:none}
-.q-table tr:hover td{background:var(--bg)}
-.qv-ok{color:var(--green);font-family:'DM Mono',monospace;font-weight:600}
-.qv-warn{color:var(--amber);font-family:'DM Mono',monospace;font-weight:600}
-.qv-bad{color:var(--red);font-family:'DM Mono',monospace;font-weight:600}
-.qv-neutral{font-family:'DM Mono',monospace;color:var(--t2)}
+.q-table tr:hover td{background:var(--bg2)}
+.qv-ok{color:#34D399;font-family:'DM Mono',monospace;font-weight:600}
+.qv-warn{color:#F59E0B;font-family:'DM Mono',monospace;font-weight:600}
+.qv-bad{color:#F87171;font-family:'DM Mono',monospace;font-weight:600}
+.qv-neutral{font-family:'DM Mono',monospace;color:#7FA8C0}
 .status-badge{font-size:10px;padding:2px 8px;border-radius:100px;font-family:'DM Mono',monospace;font-weight:600}
 .sb-pass{background:var(--greenBg);color:var(--green)}
 .sb-warn{background:var(--amberBg);color:var(--amber)}
@@ -192,14 +192,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 
 /* ── ENERGY / BOILER ────────────────────────────────── */
 .boiler-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
-.bm-box{background:var(--bg);border-radius:10px;padding:12px 14px;text-align:center}
+.bm-box{background:var(--bg2);border-radius:10px;padding:12px 14px;text-align:center}
 .bm-val{font-family:'Familjen Grotesk',sans-serif;font-size:24px;font-weight:700;line-height:1}
 .bm-unit{font-size:11px;color:var(--t3);margin-top:2px}
 .bm-lbl{font-size:11px;color:var(--t2);margin-top:5px;font-weight:500}
-.energy-saving-bar{background:var(--bg);border-radius:10px;padding:14px;margin-bottom:10px}
+.energy-saving-bar{background:var(--bg2);border-radius:10px;padding:14px;margin-bottom:10px}
 .esb-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-size:12px;color:var(--t2)}
 .esb-val{font-family:'DM Mono',monospace;font-weight:500;color:var(--green)}
-.esb-track{height:8px;background:var(--bg2);border-radius:4px;overflow:hidden}
+.esb-track{height:8px;background:rgba(255,255,255,.07);border-radius:4px;overflow:hidden}
 .esb-fill{height:100%;border-radius:4px;background:linear-gradient(90deg,var(--teal),#00A896);transition:width 1.5s}
 
 /* ── COLD CHAIN ─────────────────────────────────────── */
@@ -232,10 +232,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 .comp-a{color:var(--green)}.comp-b{color:var(--amber)}.comp-c{color:var(--red)}
 .comp-note{font-size:11px;color:var(--t3);margin-top:6px;line-height:1.4}
 .fssai-log{width:100%;border-collapse:collapse;font-size:12px}
-.fssai-log th{background:var(--bg);color:var(--t3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border)}
+.fssai-log th{background:var(--bg2);color:var(--t3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:8px 12px;text-align:left;border-bottom:1px solid var(--border)}
 .fssai-log td{padding:8px 12px;border-bottom:1px solid rgba(0,87,184,.05);color:var(--t1)}
 .fssai-log tr:last-child td{border-bottom:none}
-.fssai-log tr:hover td{background:var(--bg)}
+.fssai-log tr:hover td{background:var(--bg2)}
 
 /* ── ESG ────────────────────────────────────────────── */
 .esg-header-band{background:linear-gradient(135deg,#064E3B 0%,#065F46 60%,#047857 100%);border-radius:14px;padding:28px 32px;margin-bottom:18px;display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:center}
@@ -273,10 +273,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;height:var(--nav-h);
 .bv-uc-item::before{content:"·";flex-shrink:0;color:var(--t3)}
 .bv-table-wrap{overflow-x:auto;border:1px solid var(--border);border-radius:12px;margin-bottom:18px}
 .bv-table{width:100%;border-collapse:collapse;font-size:13px}
-.bv-table th{background:var(--bg);color:var(--t3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:10px 14px;text-align:left;border-bottom:1px solid var(--border)}
+.bv-table th{background:var(--bg2);color:var(--t3);font-family:'DM Mono',monospace;font-size:10px;text-transform:uppercase;letter-spacing:.4px;padding:10px 14px;text-align:left;border-bottom:1px solid var(--border)}
 .bv-table td{padding:11px 14px;border-bottom:1px solid rgba(0,87,184,.05);color:var(--t1)}
 .bv-table tr:last-child td{border-bottom:none;font-weight:600;background:rgba(0,87,184,.03)}
-.bv-table tr:hover td{background:var(--bg)}
+.bv-table tr:hover td{background:var(--bg2)}
 .bv-val-cell{font-family:'DM Mono',monospace;font-weight:600;color:var(--blue)}
 .bv-month-cell{font-family:'DM Mono',monospace;font-size:11px;color:var(--t3)}
 .pilot-card{background:var(--card);border:2px solid var(--blue);border-radius:14px;padding:24px 28px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center}
@@ -713,9 +713,9 @@ function showView(name){
 // ── Chart defaults ────────────────────────────────────────────────
 function cBase(extra={}){
   return{responsive:true,maintainAspectRatio:false,
-    plugins:{legend:{display:false},tooltip:{backgroundColor:'#FFFFFF',borderColor:'rgba(0,87,184,.2)',borderWidth:1,titleColor:'#0F1F2E',bodyColor:'#4A6175',titleFont:{family:'Plus Jakarta Sans'},bodyFont:{family:'DM Mono',size:11}},...(extra.plugins||{})},
-    scales:{x:{grid:{color:'rgba(0,87,184,.05)'},ticks:{color:'#8DA4B5',font:{family:'DM Mono',size:10}},...(extra.x||{})},
-      y:{grid:{color:'rgba(0,87,184,.05)'},ticks:{color:'#8DA4B5',font:{family:'DM Mono',size:10}},...(extra.y||{})}},...extra};
+    plugins:{legend:{display:false},tooltip:{backgroundColor:'#0F1D2C',borderColor:'rgba(59,158,255,.3)',borderWidth:1,titleColor:'#E2EDF5',bodyColor:'#7FA8C0',titleFont:{family:'Plus Jakarta Sans'},bodyFont:{family:'DM Mono',size:11}},...(extra.plugins||{})},
+    scales:{x:{grid:{color:'rgba(59,158,255,.06)'},ticks:{color:'#3D6070',font:{family:'DM Mono',size:10}},...(extra.x||{})},
+      y:{grid:{color:'rgba(59,158,255,.06)'},ticks:{color:'#3D6070',font:{family:'DM Mono',size:10}},...(extra.y||{})}},...extra};
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -801,7 +801,7 @@ function initOverviewCharts(){
     {label:'Anand',data:[85,86,84,87,87,86,87],borderColor:'#0057B8',fill:false,tension:.4,pointRadius:2},
     {label:'Banas',data:[88,89,88,90,89,89,89],borderColor:'#007A6E',fill:false,tension:.4,pointRadius:2},
     {label:'Mehsana',data:[80,79,77,76,75,74,75],borderColor:'#B45309',fill:false,tension:.4,pointRadius:2,borderDash:[4,3]},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:11},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:11},boxWidth:10}}}})});
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -845,8 +845,13 @@ function buildCIPView(){
     ['05:30','Evap E2','HNO₃','62°C','31 min','4.0 mS/cm','PASS'],
     ['04:48','SMP Tower','NaOH','76°C','36 min','6.2 mS/cm','COND'],
   ];
-  $('cipLogTable').innerHTML=`<thead><tr><th>Time</th><th>Circuit</th><th>Agent</th><th>Temp</th><th>Duration</th><th>Final Cond.</th><th>Result</th></tr></thead>
-    <tbody>${cipLogRows.map(r=>`<tr>${r.map((c,i)=>`<td ${i===6?`class="status-badge ${c==='PASS'?'sb-pass':'sb-warn'}" style="display:inline-block;margin:2px"`:i===3||i===5?'class="qv-neutral"':''}>  ${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+  $('cipLogTable').innerHTML='<thead><tr><th>Time</th><th>Circuit</th><th>Agent</th><th>Temp</th><th>Duration</th><th>Final Cond.</th><th>Result</th></tr></thead><tbody>'+
+    cipLogRows.map(function(r){return '<tr>'+r.map(function(c,i){
+      var cls='';
+      if(i===6){cls='class="status-badge '+(c==='PASS'?'sb-pass':'sb-warn')+'"';}
+      else if(i===3||i===5){cls='class="qv-neutral"';}
+      return '<td '+cls+'> '+c+'</td>';
+    }).join('')+'</tr>';}).join('')+'</tbody>';
 }
 
 function initCIPCharts(){
@@ -862,14 +867,14 @@ function initCIPCharts(){
   charts.cipCond=new Chart($('cipCondChart'),{type:'line',data:{labels:t,datasets:[
     {label:'Conductivity (mS/cm)',data:cond,borderColor:'#0057B8',backgroundColor:'rgba(0,87,184,.07)',fill:true,tension:.3,borderWidth:2,pointRadius:0},
     {label:'CIP Spec Min',data:Array(48).fill(7.5),borderColor:'rgba(180,83,9,.4)',borderDash:[4,3],borderWidth:1.5,pointRadius:0},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 
   charts.cipDosing=new Chart($('cipDosingChart'),{type:'bar',data:{
     labels:['Mon','Tue','Wed','Thu','Fri','Sat','Sun'],
     datasets:[
       {label:'Manual (L)',data:[142,148,144,146,143,147,145],backgroundColor:'rgba(180,83,9,.4)',borderRadius:3},
       {label:'AriLinc AI (L)',data:[108,112,109,107,111,106,108],backgroundColor:'rgba(0,122,110,.65)',borderRadius:3},
-    ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+    ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -895,8 +900,8 @@ function buildPastView(){
     ['Somatic Cell Count','2.1×10⁵','<4×10⁵/mL','qv-ok','PASS'],
     ['Plate Count','8,200 cfu/mL','<50,000','qv-ok','PASS'],
   ];
-  $('qualityTable').innerHTML=`<thead><tr><th>Parameter</th><th>Result</th><th>Spec</th><th>Status</th></tr></thead>
-    <tbody>${qRows.map(r=>`<tr><td>${r[0]}</td><td class="${r[3]}">${r[1]}</td><td style="color:var(--t3);font-size:11px">${r[2]}</td><td><span class="status-badge ${r[4]==='PASS'?'sb-pass':'sb-warn'}">${r[4]}</span></td></tr>`).join('')}</tbody>`;
+  $('qualityTable').innerHTML='<thead><tr><th>Parameter</th><th>Result</th><th>Spec</th><th>Status</th></tr></thead><tbody>'+
+    qRows.map(function(r){return '<tr><td>'+r[0]+'</td><td class="'+r[3]+'">'+r[1]+'</td><td style="color:var(--t3);font-size:11px">'+r[2]+'</td><td><span class="status-badge '+(r[4]==='PASS'?'sb-pass':'sb-warn')+'">'+r[4]+'</span></td></tr>';}).join('')+'</tbody>';
 
   const pastLog=[
     ['06:00','HTST L1','Homogenised Milk','74.4°C','16.2s','18,200','PASS'],
@@ -905,8 +910,13 @@ function buildPastView(){
     ['01:30','HTST L1','Toned Milk','73.9°C','16.1s','18,100','PASS'],
     ['00:00','HTST L2','Double Toned','74.2°C','15.6s','17,800','PASS'],
   ];
-  $('pastLogTable').innerHTML=`<thead><tr><th>Batch Start</th><th>Line</th><th>Product</th><th>Peak Temp</th><th>Hold Time</th><th>Volume (L)</th><th>Result</th></tr></thead>
-    <tbody>${pastLog.map(r=>`<tr>${r.map((c,i)=>`<td ${i===6?`class="status-badge sb-pass" style="display:inline-block;margin:2px"`:i===3?'style="color:#0057B8;font-family:DM Mono,monospace;font-weight:600"':''}>  ${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+  $('pastLogTable').innerHTML='<thead><tr><th>Batch Start</th><th>Line</th><th>Product</th><th>Peak Temp</th><th>Hold Time</th><th>Volume (L)</th><th>Result</th></tr></thead><tbody>'+
+    pastLog.map(function(r){return '<tr>'+r.map(function(c,i){
+      var cls='';
+      if(i===6){cls='class="status-badge sb-pass" style="display:inline-block;margin:2px"';}
+      else if(i===3){cls='style="color:#0057B8;font-family:DM Mono,monospace;font-weight:600"';}
+      return '<td '+cls+'> '+c+'</td>';
+    }).join('')+'</tr>';}).join('')+'</tbody>';
 }
 
 function initPastCharts(){
@@ -916,7 +926,7 @@ function initPastCharts(){
     {label:'HTST Temp (°C)',data:temp,borderColor:'#0057B8',backgroundColor:'rgba(0,87,184,.06)',fill:true,tension:.4,borderWidth:2,pointRadius:0},
     {label:'Min spec (72°C)',data:Array(60).fill(72),borderColor:'rgba(180,83,9,.4)',borderDash:[4,3],borderWidth:1.5,pointRadius:0},
     {label:'Max spec (76°C)',data:Array(60).fill(76),borderColor:'rgba(185,28,28,.3)',borderDash:[4,3],borderWidth:1.5,pointRadius:0},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 
   const uht=mins.map((_,i)=>rnd(rand(138.8,140.4)));
   charts.uhtChart=new Chart($('uhtChart'),{type:'line',data:{labels:mins,datasets:[
@@ -952,18 +962,18 @@ function initEnergyCharts(){
   charts.boilerEff=new Chart($('boilerEffChart'),{type:'line',data:{labels:hrs,datasets:[
     {label:'Efficiency (%)',data:hrs.map(()=>rnd(rand(83,89))),borderColor:'#007A6E',backgroundColor:'rgba(0,122,110,.08)',fill:true,tension:.4,borderWidth:2,pointRadius:0},
     {label:'Target (85%)',data:Array(24).fill(85),borderColor:'rgba(0,87,184,.4)',borderDash:[5,3],borderWidth:1.5,pointRadius:0},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 
   charts.steamPie=new Chart($('steamPieChart'),{type:'doughnut',data:{
     labels:['CIP Heating','Pasteurisation','Evaporation','Space Heating','Losses'],
     datasets:[{data:[22,34,28,8,8],backgroundColor:['#0057B8','#007A6E','#B45309','#5B21B6','#B91C1C'],borderWidth:2,borderColor:'#FFFFFF'}]},
-    options:{...cBase(),plugins:{legend:{display:true,position:'right',labels:{color:'#4A6175',font:{size:11},boxWidth:12}}}}});
+    options:{...cBase(),plugins:{legend:{display:true,position:'right',labels:{color:'#7FA8C0',font:{size:11},boxWidth:12}}}}});
 
   const rDays=Array.from({length:7},(_,i)=>['Mon','Tue','Wed','Thu','Fri','Sat','Sun'][i]);
   charts.refrig=new Chart($('refrigChart'),{type:'line',data:{labels:rDays,datasets:[
     {label:'Compressor Load (%)',data:[72,74,71,76,73,75,74],borderColor:'#5B21B6',fill:false,tension:.4,pointRadius:3,pointBackgroundColor:'#5B21B6'},
     {label:'Target (<80%)',data:Array(7).fill(80),borderColor:'rgba(180,83,9,.4)',borderDash:[4,3],borderWidth:1.5,pointRadius:0},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -1005,9 +1015,13 @@ function buildColdChainView(){
     {cls:'ca-ok',t:'04:15',m:'Chilling Centre CC-14 (Ode) — BMC temperature at 4.1°C. Grade A milk quality confirmed.'},
   ].map(e=>`<div class="cold-alert ${e.cls}"><div class="ca-time">${e.t}</div><div class="ca-msg">${e.m}</div></div>`).join('');
 
-  $('vehicleTable').innerHTML=`<thead><tr><th>Vehicle</th><th>Route</th><th>Temp</th><th>Status</th></tr></thead><tbody>
-    ${[['MH-04-AM-7821','Anand→Ahmedabad','6.2°C','⚠ Alert'],['GJ-01-AB-1234','Anand→Surat','4.8°C','✓ OK'],['GJ-15-BZ-4422','Mehsana→Gandhinagar','4.2°C','✓ OK'],['GJ-03-CD-5678','Banas→Palanpur','4.6°C','✓ OK'],['MH-12-EF-9012','Anand→Mumbai','4.4°C','✓ OK']].map(r=>`<tr>${r.map((c,i)=>`<td style="${i===2?'font-family:DM Mono,monospace;color:'+(r[3].includes('Alert')?'#B91C1C':'#007A6E'):'i===3?color:var(--t3)':''}">${c}</td>`).join('')}</tr>`).join('')}
-  </tbody>`;
+  const vRows=[['MH-04-AM-7821','Anand→Ahmedabad','6.2°C','⚠ Alert'],['GJ-01-AB-1234','Anand→Surat','4.8°C','✓ OK'],['GJ-15-BZ-4422','Mehsana→Gandhinagar','4.2°C','✓ OK'],['GJ-03-CD-5678','Banas→Palanpur','4.6°C','✓ OK'],['MH-12-EF-9012','Anand→Mumbai','4.4°C','✓ OK']];
+  $('vehicleTable').innerHTML='<thead><tr><th>Vehicle</th><th>Route</th><th>Temp</th><th>Status</th></tr></thead><tbody>'+
+    vRows.map(r=>{
+      const isAlert=r[3].includes('Alert');
+      const tc=isAlert?'#B91C1C':'#166534';
+      return '<tr><td style="font-family:DM Mono,monospace;font-size:12px">'+r[0]+'</td><td style="font-size:12px;color:#4A6175">'+r[1]+'</td><td style="font-family:DM Mono,monospace;font-weight:600;color:'+tc+'">'+r[2]+'</td><td style="font-size:11px;font-weight:600;color:'+tc+'">'+r[3]+'</td></tr>';
+    }).join('')+'</tbody>';
 }
 
 function initColdCharts(){
@@ -1015,34 +1029,47 @@ function initColdCharts(){
   charts.ccTemp=new Chart($('ccTempChart'),{type:'bar',data:{labels:days,datasets:[
     {label:'Excursion events',data:[2,1,3,0,1,2,1],backgroundColor:'rgba(185,28,28,.55)',borderRadius:4},
     {label:'Resolved <30 min',data:[2,1,2,0,1,1,1],backgroundColor:'rgba(0,122,110,.55)',borderRadius:4},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 }
 
 // ════════════════════════════════════════════════════════════════
 // COMPLIANCE VIEW
 // ════════════════════════════════════════════════════════════════
 function buildComplianceView(){
-  $('complianceCards').innerHTML=[
+  var compData=[
     {score:'98.6',lbl:'FSSAI Compliance Score',chip:'GRADE A',cls:'comp-a',note:'Auto-generated records for 847 CIP cycles this month'},
     {score:'100',lbl:'Pasteurisation Log Completeness',chip:'COMPLETE',cls:'comp-a',note:'Every batch logged with temp, time, volume — export ready'},
     {score:'94.2',lbl:'Cold Chain Compliance Rate',chip:'GRADE A',cls:'comp-a',note:'186 vehicles tracked · 7-day rolling compliance'},
     {score:'89.4',lbl:'HACCP Critical Control Points',chip:'GRADE B',cls:'comp-b',note:'3 CCP deviations logged and corrected this month'},
     {score:'100',lbl:'Boiler Safety (PESO) Records',chip:'COMPLIANT',cls:'comp-a',note:'All boiler inspection and pressure test records auto-logged'},
     {score:'97.8',lbl:'Water Quality (BIS 10500)',chip:'COMPLIANT',cls:'comp-a',note:'Potable water test records for 3 borewell points'},
-  ].map(c=>`<div class="comp-card">
-    <div class="comp-score" style="color:${c.cls==='comp-a'?'#166534':c.cls==='comp-b'?'#B45309':'#B91C1C'}">${c.score}%</div>
-    <div class="comp-lbl">${c.lbl}</div>
-    <div class="comp-chip" style="background:${c.cls==='comp-a'?'var(--greenBg)':c.cls==='comp-b'?'var(--amberBg)':'var(--redBg)'};color:${c.cls==='comp-a'?'var(--green)':c.cls==='comp-b'?'var(--amber)':'var(--red)'};padding:3px 10px;border-radius:100px;font-size:10px;font-family:DM Mono,monospace;font-weight:600;display:inline-block">${c.chip}</div>
-    <div class="comp-note">${c.note}</div>
-  </div>`).join('');
+  ];
+  $('complianceCards').innerHTML=compData.map(function(c){
+    var scoreCol=c.cls==='comp-a'?'#34D399':c.cls==='comp-b'?'#F59E0B':'#F87171';
+    var chipBg=c.cls==='comp-a'?'rgba(52,211,153,.15)':c.cls==='comp-b'?'rgba(245,158,11,.15)':'rgba(248,113,113,.15)';
+    return '<div class="comp-card">'
+      +'<div class="comp-score" style="color:'+scoreCol+'">'+c.score+'%</div>'
+      +'<div class="comp-lbl">'+c.lbl+'</div>'
+      +'<div class="comp-chip" style="background:'+chipBg+';color:'+scoreCol+';padding:3px 10px;border-radius:100px;font-size:10px;font-family:DM Mono,monospace;font-weight:600;display:inline-block">'+c.chip+'</div>'
+      +'<div class="comp-note">'+c.note+'</div>'
+      +'</div>';
+  }).join('');
 
   const cipFSSAI=[['08:14','Tanker Bay 1','NaOH 2.0%','80°C','42 min','8.4 mS/cm','PASS','Auto'],['07:30','Pasteuriser L1','HNO₃ 0.8%','65°C','28 min','4.2 mS/cm','PASS','Auto'],['06:55','Storage T1','NaOH 1.8%','78°C','38 min','8.1 mS/cm','PASS','Auto'],['06:10','Filling FL1','NaOH 2.1%','82°C','44 min','8.6 mS/cm','PASS','Auto'],['05:30','SMP Tower','NaOH 1.6%','76°C','36 min','6.2 mS/cm','CONDIT','Auto']];
-  $('fssaiCIPLog').innerHTML=`<thead><tr><th>Time</th><th>Circuit</th><th>Agent</th><th>Temp</th><th>Duration</th><th>Conductivity</th><th>Result</th><th>Source</th></tr></thead>
-    <tbody>${cipFSSAI.map(r=>`<tr>${r.map((c,i)=>`<td class="${i===6?(c==='PASS'?'status-badge sb-pass':'status-badge sb-warn'):''}" ${i===6?'style="display:inline-block;margin:2px"':''}>${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+  $('fssaiCIPLog').innerHTML='<thead><tr><th>Time</th><th>Circuit</th><th>Agent</th><th>Temp</th><th>Duration</th><th>Conductivity</th><th>Result</th><th>Source</th></tr></thead><tbody>'+
+    cipFSSAI.map(function(r){return '<tr>'+r.map(function(c,i){
+      var cls=i===6?(c==='PASS'?'status-badge sb-pass':'status-badge sb-warn'):'';
+      var sty=i===6?'style="display:inline-block;margin:2px"':'';
+      return '<td class="'+cls+'" '+sty+'>'+c+'</td>';
+    }).join('')+'</tr>';}).join('')+'</tbody>';
 
   const pastFSSAI=[['06:00','HTST L1','Homo Milk','74.4°C','16.2s','18,200L','PASS'],['04:30','HTST L2','Whole Milk','74.8°C','15.8s','17,900L','PASS'],['03:00','UHT L1','Amul Gold','139.8°C','4.2s','12,400L','PASS'],['01:30','HTST L1','Toned Milk','73.9°C','16.1s','18,100L','PASS']];
-  $('fssaiPastLog').innerHTML=`<thead><tr><th>Batch Time</th><th>Line</th><th>Product</th><th>Temp</th><th>Hold Time</th><th>Volume</th><th>Result</th></tr></thead>
-    <tbody>${pastFSSAI.map(r=>`<tr>${r.map((c,i)=>`<td class="${i===6?'status-badge sb-pass':i===3?'qv-ok':''}" ${i===6?'style="display:inline-block;margin:2px"':''}>${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+  $('fssaiPastLog').innerHTML='<thead><tr><th>Batch Time</th><th>Line</th><th>Product</th><th>Temp</th><th>Hold Time</th><th>Volume</th><th>Result</th></tr></thead><tbody>'+
+    pastFSSAI.map(function(r){return '<tr>'+r.map(function(c,i){
+      var cls=i===6?'status-badge sb-pass':i===3?'qv-ok':'';
+      var sty=i===6?'style="display:inline-block;margin:2px"':'';
+      return '<td class="'+cls+'" '+sty+'>'+c+'</td>';
+    }).join('')+'</tr>';}).join('')+'</tbody>';
 
   $('regulatoryPanel').innerHTML=`<div style="display:flex;flex-direction:column;gap:12px">
   ${[['FSSAI Food Safety','Auto-logged CIP, pasteurisation and quality records. Digital FSMS compliant.','#166534','98.6%'],['HACCP CCP Monitoring','All critical control points monitored in real time. Deviations logged.','#007A6E','94.2%'],['BIS 1479 (Pasteurised Milk)','Temperature, holding time and frequency compliant. Records auto-generated.','#0057B8','100%'],['ISO 22000 (Food Safety Mgmt)','Traceability from farm to shelf. Digital batch records at every stage.','#5B21B6','96.4%'],['CPCB Effluent (ETP Load)','CIP chemical reduction → lower BOD/COD discharge. CPCB compliant.','#007A6E','91.8%']].map(([title,desc,col,pct])=>`
@@ -1063,7 +1090,7 @@ function initComplianceCharts(){
   charts.compTrend=new Chart($('complianceTrendChart'),{type:'line',data:{labels:MONTHS,datasets:[
     {label:'FSSAI Score (%)',data:[82,84,86,89,91,94,98.6],borderColor:'#0057B8',backgroundColor:'rgba(0,87,184,.07)',fill:true,tension:.4,pointRadius:3,pointBackgroundColor:'#0057B8'},
     {label:'Industry Average',data:[76,77,77,78,78,79,80],borderColor:'rgba(180,83,9,.5)',borderDash:[4,3],borderWidth:1.5,pointRadius:0},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -1091,43 +1118,45 @@ function initESGCharts(){
   charts.esgRes=new Chart($('esgResourceChart'),{type:'bar',data:{labels:MONTHS,datasets:[
     {label:'Water (KL saved)',data:[0,180,260,340,420,520,680],backgroundColor:'rgba(0,87,184,.55)',borderRadius:3,yAxisID:'y'},
     {label:'Chemicals (kg avoided)',data:[0,820,1200,1640,2200,3200,4800],backgroundColor:'rgba(0,122,110,.55)',borderRadius:3,yAxisID:'y1'},
-  ]},options:{...cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}}),
-    scales:{...cBase().scales,y1:{position:'right',grid:{drawOnChartArea:false},ticks:{color:'#8DA4B5',font:{family:'DM Mono',size:10}}}}}});
+  ]},options:{...cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}}),
+    scales:{...cBase().scales,y1:{position:'right',grid:{drawOnChartArea:false},ticks:{color:'#3D6070',font:{family:'DM Mono',size:10}}}}}});
 
   charts.etp=new Chart($('etpChart'),{type:'line',data:{labels:MONTHS,datasets:[
     {label:'BOD (mg/L)',data:[420,388,352,318,284,248,220],borderColor:'#B45309',fill:false,tension:.4,pointRadius:3,pointBackgroundColor:'#B45309'},
     {label:'COD (mg/L)',data:[840,776,704,636,568,496,440],borderColor:'#5B21B6',fill:false,tension:.4,pointRadius:3,pointBackgroundColor:'#5B21B6'},
     {label:'CPCB Limit BOD',data:Array(7).fill(250),borderColor:'rgba(185,28,28,.4)',borderDash:[5,3],borderWidth:1.5,pointRadius:0},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 
   charts.carbon=new Chart($('carbonChart'),{type:'bar',data:{labels:MONTHS,datasets:[
     {label:'CO₂ (tonnes/month)',data:[48,46,44,42,40,38,36],backgroundColor:'rgba(0,87,184,.6)',borderRadius:3},
     {label:'Baseline',data:Array(7).fill(48),backgroundColor:'rgba(180,83,9,.3)',borderRadius:3},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 }
 
 // ════════════════════════════════════════════════════════════════
 // BUSINESS VALUE VIEW
 // ════════════════════════════════════════════════════════════════
 function buildValueView(){
-  $('bvUseCases').innerHTML=[
-    {icon:'🧪',num:'01',name:'CIP Optimisation',val:'Rs 4–8 Cr',per:'Per plant / year',col:'#007A6E',items:['28% caustic soda saving','31% water reduction','18% steam saving in CIP','Automated FSSAI log generation']},
-    {icon:'🌡',num:'02',name:'Pasteurisation Intelligence',val:'Rs 2–4 Cr',per:'Per plant / year',col:'#0057B8',items:['Zero surprise off-spec batches','NIR soft sensor — fat/SNF/protein','Recall prevention','100% digital batch records']},
-    {icon:'💨',num:'03',name:'Energy & Steam',val:'Rs 3–5 Cr',per:'Per plant / year',col:'#B45309',items:['15% boiler fuel saving','Refrigeration compressor prediction','Chilling energy optimisation','Predictive maintenance ROI']},
-    {icon:'❄',num:'04',name:'Cold Chain',val:'Rs 2–4 Cr',per:'Per plant / year',col:'#5B21B6',items:['98.4% cold chain compliance','Early excursion alert','Spoilage prevention','Modern trade SLA protection']},
-    {icon:'✅',num:'05',name:'FSSAI Compliance',val:'Rs 1–2 Cr',per:'Per plant / year',col:'#B91C1C',items:['Auto-generated FSSAI records','HACCP CCP monitoring','Audit preparation time saved','Zero non-conformance risk']},
-    {icon:'🌿',num:'06',name:'ESG & Sustainability',val:'Rs 1–3 Cr',per:'Per plant / year',col:'#166534',items:['Verified sustainability data','CPCB ETP load reduction','Carbon footprint tracking','Export market ESG credentials']},
-  ].map(uc=>`<div class="bv-uc">
-    <div class="bv-uc-icon">${uc.icon}</div>
-    <div class="bv-uc-num">${uc.num}</div>
-    <div class="bv-uc-name">${uc.name}</div>
-    <div class="bv-uc-val" style="color:${uc.col}">${uc.val}</div>
-    <div class="bv-uc-period" style="color:var(--t3)">${uc.per}</div>
-    <div class="bv-uc-items">${uc.items.map(i=>`<div class="bv-uc-item">${i}</div>`).join('')}</div>
-  </div>`).join('');
+  var bvUCData=[
+    {icon:'🧪',num:'01',name:'CIP Optimisation',val:'Rs 4–8 Cr',per:'Per plant / year',col:'#00C8B8',items:['28% caustic soda saving','31% water reduction','18% steam saving in CIP','Automated FSSAI log generation']},
+    {icon:'🌡',num:'02',name:'Pasteurisation Intelligence',val:'Rs 2–4 Cr',per:'Per plant / year',col:'#3B9EFF',items:['Zero surprise off-spec batches','NIR soft sensor — fat/SNF/protein','Recall prevention','100% digital batch records']},
+    {icon:'💨',num:'03',name:'Energy & Steam',val:'Rs 3–5 Cr',per:'Per plant / year',col:'#F59E0B',items:['15% boiler fuel saving','Refrigeration compressor prediction','Chilling energy optimisation','Predictive maintenance ROI']},
+    {icon:'❄',num:'04',name:'Cold Chain',val:'Rs 2–4 Cr',per:'Per plant / year',col:'#A78BFA',items:['98.4% cold chain compliance','Early excursion alert','Spoilage prevention','Modern trade SLA protection']},
+    {icon:'✅',num:'05',name:'FSSAI Compliance',val:'Rs 1–2 Cr',per:'Per plant / year',col:'#F87171',items:['Auto-generated FSSAI records','HACCP CCP monitoring','Audit preparation time saved','Zero non-conformance risk']},
+    {icon:'🌿',num:'06',name:'ESG & Sustainability',val:'Rs 1–3 Cr',per:'Per plant / year',col:'#34D399',items:['Verified sustainability data','CPCB ETP load reduction','Carbon footprint tracking','Export market ESG credentials']},
+  ];
+  $('bvUseCases').innerHTML=bvUCData.map(function(uc){
+    return '<div class="bv-uc">'
+      +'<div class="bv-uc-icon">'+uc.icon+'</div>'
+      +'<div class="bv-uc-num">'+uc.num+'</div>'
+      +'<div class="bv-uc-name">'+uc.name+'</div>'
+      +'<div class="bv-uc-val" style="color:'+uc.col+'">'+uc.val+'</div>'
+      +'<div class="bv-uc-period" style="color:var(--t3)">'+uc.per+'</div>'
+      +'<div class="bv-uc-items">'+uc.items.map(function(i){return '<div class="bv-uc-item">'+i+'</div>';}).join('')+'</div>'
+      +'</div>';
+  }).join('');
 
-  $('bvTable').innerHTML=`<thead><tr><th>Value Driver</th><th>Use Case</th><th>Per Month (Rs)</th><th>Per Year (Rs)</th><th>Confidence</th></tr></thead>
-    <tbody>${[
+  var bvRows=[
     ['CIP Chemical + Water Saving','CIP Optimisation','33–67L','4–8 Cr','High'],
     ['Pasteurisation Off-Spec Avoidance','Pasteurisation','17–33L','2–4 Cr','High'],
     ['Boiler Fuel + Refrigeration Energy','Energy & Steam','25–42L','3–5 Cr','High'],
@@ -1135,7 +1164,13 @@ function buildValueView(){
     ['Compliance Audit Cost Avoidance','FSSAI','8–17L','1–2 Cr','High'],
     ['ETP Load + ESG Reporting','ESG','8–25L','1–3 Cr','Medium'],
     ['Total — 1 Plant','All 6 Use Cases','Rs 1.08–2.17 Cr/mo','Rs 13–26 Cr','High'],
-  ].map((r,i)=>`<tr>${r.map((c,j)=>`<td class="${j===3?'bv-val-cell':j===2?'bv-month-cell':''}" style="${i===6&&j===0?'font-weight:600;color:var(--t1)':''}">${c}</td>`).join('')}</tr>`).join('')}</tbody>`;
+  ];
+  $('bvTable').innerHTML='<thead><tr><th>Value Driver</th><th>Use Case</th><th>Per Month (Rs)</th><th>Per Year (Rs)</th><th>Confidence</th></tr></thead><tbody>'+
+    bvRows.map(function(r,i){return '<tr>'+r.map(function(c,j){
+      var cls=j===3?'bv-val-cell':j===2?'bv-month-cell':'';
+      var sty=(i===6&&j===0)?'style="font-weight:600;color:var(--t1)"':'';
+      return '<td class="'+cls+'" '+sty+'>'+c+'</td>';
+    }).join('')+'</tr>';}).join('')+'</tbody>';
 
   const scaleTable=document.createElement('div');
   scaleTable.style.cssText='background:rgba(0,87,184,.05);border:1px solid var(--borderHi);border-radius:12px;padding:16px 20px;margin-bottom:18px;text-align:center';
@@ -1152,12 +1187,12 @@ function initValueCharts(){
     {label:'Pasteurisation',data:[0,0,14,16,18,20,22,24,24,24,24,24],backgroundColor:'rgba(0,87,184,.65)',borderRadius:3,stack:'s'},
     {label:'Energy',data:[0,0,0,18,22,24,26,28,30,30,30,30],backgroundColor:'rgba(180,83,9,.6)',borderRadius:3,stack:'s'},
     {label:'Cold Chain + Compliance',data:[0,0,0,0,12,14,16,18,20,22,22,22],backgroundColor:'rgba(91,33,182,.6)',borderRadius:3,stack:'s'},
-  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}})});
+  ]},options:cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}})});
 
   charts.bvTCO=new Chart($('bvTCOChart'),{type:'bar',data:{labels:['Y1','Y2','Y3','Y4','Y5'],datasets:[
     {label:'Status Quo (manual + current tools)',data:[0,0,0,0,0],backgroundColor:'rgba(180,83,9,.5)',borderRadius:3},
     {label:'AriLinc (all 6 use cases)',data:[18.5,13,26,26,26],backgroundColor:'rgba(0,87,184,.6)',borderRadius:3},
-  ]},options:{...cBase({plugins:{legend:{display:true,labels:{color:'#4A6175',font:{size:10},boxWidth:10}}}}),
+  ]},options:{...cBase({plugins:{legend:{display:true,labels:{color:'#7FA8C0',font:{size:10},boxWidth:10}}}}),
     scales:{...cBase().scales,y:{...cBase().scales.y,title:{display:true,text:'Rs Crore',color:'#8DA4B5',font:{size:10}}}}}});
 
   // Update TCO with savings overlay
